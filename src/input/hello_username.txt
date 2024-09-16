@@ -1,0 +1,6 @@
+{
+    print("Enter username");
+    string username = input()
+    print("Hello, ")
+    print(username)
+}

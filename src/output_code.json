@@ -1,0 +1,878 @@
+{
+    "labels": [
+        {
+            "label": "START_PRINT_0"
+        },
+        {
+            "label": "END_PRINT_0"
+        },
+        {
+            "label": "PRINT_LOOP_0"
+        },
+        {
+            "label": "STR_ADR_0",
+            "address": 0,
+            "value": "Hello world!",
+            "type": "string"
+        },
+        {
+            "label": "username",
+            "address": 1,
+            "type": "string"
+        },
+        {
+            "label": "START_PRINT_1"
+        },
+        {
+            "label": "END_PRINT_1"
+        },
+        {
+            "label": "PRINT_LOOP_1"
+        },
+        {
+            "label": "STR_ADR_2",
+            "address": 2,
+            "value": "Hello, ",
+            "type": "string"
+        },
+        {
+            "label": "START_PRINT_2"
+        },
+        {
+            "label": "END_PRINT_2"
+        },
+        {
+            "label": "PRINT_LOOP_3"
+        },
+        {
+            "label": "i",
+            "address": 3,
+            "type": "int"
+        },
+        {
+            "label": "sum",
+            "address": 4,
+            "type": "int"
+        },
+        {
+            "label": "START_WHILE_0"
+        },
+        {
+            "label": "WHILE_LOOP_0"
+        },
+        {
+            "label": "END_WHILE_0"
+        },
+        {
+            "label": "TEMP_VAR_INT_0",
+            "address": 5,
+            "type": "int"
+        },
+        {
+            "label": "START_BINARY_OP_0"
+        },
+        {
+            "label": "END_BINARY_OP_0"
+        },
+        {
+            "label": "START_BINARY_OP_1"
+        },
+        {
+            "label": "END_BINARY_OP_1"
+        },
+        {
+            "label": "TEMP_VAR_INT_1",
+            "address": 6,
+            "type": "int"
+        },
+        {
+            "label": "START_BINARY_OP_2"
+        },
+        {
+            "label": "END_BINARY_OP_2"
+        },
+        {
+            "label": "START_BINARY_OP_3"
+        },
+        {
+            "label": "END_BINARY_OP_3"
+        },
+        {
+            "label": "START_BINARY_OP_4"
+        },
+        {
+            "label": "END_BINARY_OP_4"
+        },
+        {
+            "label": "START_PRINT_3"
+        },
+        {
+            "label": "END_PRINT_3"
+        },
+        {
+            "label": "str",
+            "address": 7,
+            "type": "string"
+        },
+        {
+            "label": "START_WHILE_1"
+        },
+        {
+            "label": "WHILE_LOOP_1"
+        },
+        {
+            "label": "END_WHILE_1"
+        },
+        {
+            "label": "STR_ADR_4",
+            "address": 8,
+            "value": "$",
+            "type": "string"
+        },
+        {
+            "label": "START_PRINT_4"
+        },
+        {
+            "label": "END_PRINT_4"
+        },
+        {
+            "label": "PRINT_LOOP_5"
+        }
+    ],
+    "program_code": [
+        {
+            "label": "START_PRINT_0"
+        },
+        {
+            "opcode": "ld",
+            "operand": "STR_ADR_0",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "label": "PRINT_LOOP_0"
+        },
+        {
+            "opcode": "ld",
+            "operand": "CUR_ADR",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "cmp",
+            "operand": "\u0000",
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "je",
+            "operand": "END_PRINT_0"
+        },
+        {
+            "opcode": "st",
+            "operand": "OUT_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "ld",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "inc"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "PRINT_LOOP_0"
+        },
+        {
+            "label": "END_PRINT_0"
+        },
+        {
+            "label": "START_INPUT_0"
+        },
+        {
+            "opcode": "ld",
+            "operand": "username",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "label": "INPUT_LOOP_0"
+        },
+        {
+            "opcode": "ld",
+            "operand": "IN_ADR",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "cmp",
+            "operand": ".",
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "je",
+            "operand": "END_INPUT_0"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "ld",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "inc"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "INPUT_LOOP_0"
+        },
+        {
+            "label": "END_INPUT_0"
+        },
+        {
+            "label": "START_PRINT_1"
+        },
+        {
+            "opcode": "ld",
+            "operand": "STR_ADR_2",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "label": "PRINT_LOOP_1"
+        },
+        {
+            "opcode": "ld",
+            "operand": "CUR_ADR",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "cmp",
+            "operand": "\u0000",
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "je",
+            "operand": "END_PRINT_1"
+        },
+        {
+            "opcode": "st",
+            "operand": "OUT_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "ld",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "inc"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "PRINT_LOOP_1"
+        },
+        {
+            "label": "END_PRINT_1"
+        },
+        {
+            "label": "START_PRINT_2"
+        },
+        {
+            "opcode": "ld",
+            "operand": "username",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "label": "PRINT_LOOP_3"
+        },
+        {
+            "opcode": "ld",
+            "operand": "CUR_ADR",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "cmp",
+            "operand": "\u0000",
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "je",
+            "operand": "END_PRINT_2"
+        },
+        {
+            "opcode": "st",
+            "operand": "OUT_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "ld",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "inc"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "PRINT_LOOP_3"
+        },
+        {
+            "label": "END_PRINT_2"
+        },
+        {
+            "label": "START_WHILE_0"
+        },
+        {
+            "opcode": "ld",
+            "operand": "i",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "cmp",
+            "operand": 1000,
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "jb",
+            "operand": "WHILE_LOOP_0"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "END_WHILE_0"
+        },
+        {
+            "label": "WHILE_LOOP_0"
+        },
+        {
+            "label": "START_IF_ELSE_0"
+        },
+        {
+            "label": "START_BINARY_OP_0"
+        },
+        {
+            "opcode": "ld",
+            "operand": "i",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "mod",
+            "operand": 3,
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "st",
+            "operand": "TEMP_VAR_INT_0",
+            "addr_mode": "indirect"
+        },
+        {
+            "label": "END_BINARY_OP_0"
+        },
+        {
+            "opcode": "ld",
+            "operand": "TEMP_VAR_INT_0",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "cmp",
+            "operand": 0,
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "je",
+            "operand": "IF_BODY_0"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "ELSE_BODY_0"
+        },
+        {
+            "label": "IF_BODY_0"
+        },
+        {
+            "label": "START_BINARY_OP_1"
+        },
+        {
+            "opcode": "ld",
+            "operand": "sum",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "add",
+            "operand": "i",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "st",
+            "operand": "sum",
+            "addr_mode": "indirect"
+        },
+        {
+            "label": "END_BINARY_OP_1"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "END_IF_ELSE_0"
+        },
+        {
+            "label": "ELSE_BODY_0"
+        },
+        {
+            "label": "START_IF_1"
+        },
+        {
+            "label": "START_BINARY_OP_2"
+        },
+        {
+            "opcode": "ld",
+            "operand": "i",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "mod",
+            "operand": 5,
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "st",
+            "operand": "TEMP_VAR_INT_1",
+            "addr_mode": "indirect"
+        },
+        {
+            "label": "END_BINARY_OP_2"
+        },
+        {
+            "opcode": "ld",
+            "operand": "TEMP_VAR_INT_1",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "cmp",
+            "operand": 0,
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "je",
+            "operand": "IF_BODY_1"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "END_IF_1"
+        },
+        {
+            "label": "IF_BODY_1"
+        },
+        {
+            "label": "START_BINARY_OP_3"
+        },
+        {
+            "opcode": "ld",
+            "operand": "sum",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "add",
+            "operand": "i",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "st",
+            "operand": "sum",
+            "addr_mode": "indirect"
+        },
+        {
+            "label": "END_BINARY_OP_3"
+        },
+        {
+            "label": "END_IF_1"
+        },
+        {
+            "label": "END_IF_ELSE_0"
+        },
+        {
+            "label": "START_BINARY_OP_4"
+        },
+        {
+            "opcode": "ld",
+            "operand": "i",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "add",
+            "operand": 1,
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "st",
+            "operand": "i",
+            "addr_mode": "indirect"
+        },
+        {
+            "label": "END_BINARY_OP_4"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "START_WHILE_0"
+        },
+        {
+            "label": "END_WHILE_0"
+        },
+        {
+            "label": "START_PRINT_3"
+        },
+        {
+            "opcode": "ld",
+            "operand": "sum",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "st",
+            "operand": "OUT_ADR",
+            "addr_mode": "indirect"
+        },
+        {
+            "label": "END_PRINT_3"
+        },
+        {
+            "label": "START_INPUT_1"
+        },
+        {
+            "opcode": "ld",
+            "operand": "str",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "label": "INPUT_LOOP_1"
+        },
+        {
+            "opcode": "ld",
+            "operand": "IN_ADR",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "cmp",
+            "operand": ".",
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "je",
+            "operand": "END_INPUT_1"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "ld",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "inc"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "INPUT_LOOP_1"
+        },
+        {
+            "label": "END_INPUT_1"
+        },
+        {
+            "label": "START_WHILE_1"
+        },
+        {
+            "opcode": "ld",
+            "operand": "str",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "cmp",
+            "operand": "STR_ADR_4",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "jne",
+            "operand": "WHILE_LOOP_1"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "END_WHILE_1"
+        },
+        {
+            "label": "WHILE_LOOP_1"
+        },
+        {
+            "label": "START_PRINT_4"
+        },
+        {
+            "opcode": "ld",
+            "operand": "str",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "label": "PRINT_LOOP_5"
+        },
+        {
+            "opcode": "ld",
+            "operand": "CUR_ADR",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "cmp",
+            "operand": "\u0000",
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "je",
+            "operand": "END_PRINT_4"
+        },
+        {
+            "opcode": "st",
+            "operand": "OUT_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "ld",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "inc"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "PRINT_LOOP_5"
+        },
+        {
+            "label": "END_PRINT_4"
+        },
+        {
+            "label": "START_INPUT_2"
+        },
+        {
+            "opcode": "ld",
+            "operand": "str",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "label": "INPUT_LOOP_2"
+        },
+        {
+            "opcode": "ld",
+            "operand": "IN_ADR",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "cmp",
+            "operand": ".",
+            "addr_mode": "immediate"
+        },
+        {
+            "opcode": "je",
+            "operand": "END_INPUT_2"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "indirect"
+        },
+        {
+            "opcode": "ld",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "inc"
+        },
+        {
+            "opcode": "st",
+            "operand": "CUR_ADR",
+            "addr_mode": "direct"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "INPUT_LOOP_2"
+        },
+        {
+            "label": "END_INPUT_2"
+        },
+        {
+            "opcode": "jmp",
+            "operand": "START_WHILE_1"
+        },
+        {
+            "label": "END_WHILE_1"
+        },
+        {
+            "opcode": "hlt"
+        }
+    ],
+    "data_section": [
+        {
+            "type": "string",
+            "value": [
+                "H",
+                "e",
+                "l",
+                "l",
+                "o",
+                " ",
+                "w",
+                "o",
+                "r",
+                "l",
+                "d",
+                "!",
+                "\u0000"
+            ]
+        },
+        {
+            "type": "string",
+            "value": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "\u0000"
+            ]
+        },
+        {
+            "type": "string",
+            "value": [
+                "H",
+                "e",
+                "l",
+                "l",
+                "o",
+                ",",
+                " ",
+                "\u0000"
+            ]
+        },
+        {
+            "type": "int",
+            "value": 0
+        },
+        {
+            "type": "int",
+            "value": 0
+        },
+        {
+            "type": "int",
+            "value": [
+                0
+            ]
+        },
+        {
+            "type": "int",
+            "value": [
+                0
+            ]
+        },
+        {
+            "type": "string",
+            "value": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "\u0000"
+            ]
+        },
+        {
+            "type": "string",
+            "value": [
+                "$",
+                "\u0000"
+            ]
+        }
+    ]
+}

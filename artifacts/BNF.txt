@@ -1,0 +1,23 @@
+<program> ::= "{" <statements> "}"
+
+<statements> ::= <statement> | <statement> <statements>
+
+<statement> ::= <variable_declaration> | <assignment> | <while_loop> | <if_statement>
+
+<variable_declaration> ::= <type> <identifier> "=" <expression> ";"
+<type> ::= "int" | "float" | "bool"
+
+<assignment> ::= <identifier> "=" <expression> ";"
+
+<while_loop> ::= "while" "(" <expression> ")" "{" <statements> "}"
+
+<if_statement> ::= "if" "(" <expression> ")" "{" <statements> "}" <else_statement>?
+<else_statement> ::= "else" "{" <statements> "}"
+
+<expression> ::= <term> | <expression> <operator> <term>
+<term> ::= <identifier> | <literal> | "(" <expression> ")"
+<literal> ::= <integer_literal>
+<operator> ::= "+" | "-" | "*" | "/" | "%" | "==" | "!=" | "<" | ">" | "<=" | ">="
+
+<identifier> ::= [a-zA-Z_][a-zA-Z0-9_]*
+<integer_literal> ::= [0-9]+

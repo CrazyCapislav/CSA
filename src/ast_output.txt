@@ -1,0 +1,80 @@
+Program:
+  Print:
+    String("Hello world!")
+  Assign(var=username, var_type=STRING_TYPE)
+    FunctionCall(input)
+  Print:
+    String("Hello, ")
+  Print:
+    Identifier(username)
+  Assign(var=i, var_type=INT)
+    Number(0)
+  Assign(var=sum, var_type=INT)
+    Number(0)
+  While:
+    Condition:
+      BinaryOp(
+          Identifier(i)
+        LT
+          Number(1000)
+      )
+    WhileBody:
+      IfElse:
+        Condition:
+          BinaryOp(
+              BinaryOp(
+                  Identifier(i)
+                MOD
+                  Number(3)
+              )
+            EQ
+              Number(0)
+          )
+        IfBody:
+          Assign(var=sum, var_type=unknown)
+            BinaryOp(
+                Identifier(sum)
+              PLUS
+                Identifier(i)
+            )
+        ElseBody:
+          If:
+            Condition:
+              BinaryOp(
+                  BinaryOp(
+                      Identifier(i)
+                    MOD
+                      Number(5)
+                  )
+                EQ
+                  Number(0)
+              )
+            Body:
+              Assign(var=sum, var_type=unknown)
+                BinaryOp(
+                    Identifier(sum)
+                  PLUS
+                    Identifier(i)
+                )
+      Assign(var=i, var_type=unknown)
+        BinaryOp(
+            Identifier(i)
+          PLUS
+            Number(1)
+        )
+  Print:
+    Identifier(sum)
+  Assign(var=str, var_type=STRING_TYPE)
+    FunctionCall(input)
+  While:
+    Condition:
+      BinaryOp(
+          Identifier(str)
+        NEQ
+          String("$")
+      )
+    WhileBody:
+      Print:
+        Identifier(str)
+      Assign(var=str, var_type=unknown)
+        FunctionCall(input)

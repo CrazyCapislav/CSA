@@ -1,0 +1,42 @@
+{
+    int i = 0;
+    int sum = 0;
+    while(i < 1000){
+        if(i % 3 == 0){
+            sum = sum + i;
+        }
+        else{
+            if(i % 5 == 0){
+                sum = sum + i;
+            }
+        }
+        i = i + 1;
+    }
+}
+
+    {
+        string str = input();
+        while(str != "0"){
+            print(str);
+            str = input();
+        }
+        print("Hello, World!");
+        string name = input();
+        print("Hello, ");
+        print(name);
+        int i = 0;
+        int sum = 0;
+        while(i < 1000){
+            if(i % 3 == 0){
+                sum = sum + i;
+            }
+            else{
+                if(i % 5 == 0){
+                    sum = sum + i;
+                }
+            }
+            i = i + 1;
+        }
+    }
+
+

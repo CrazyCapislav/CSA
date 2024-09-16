@@ -1,0 +1,646 @@
+{
+    "instructions": [
+        {
+            "curr_addr": 0,
+            "opcode": "ld",
+            "addr": 0,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 1,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 2,
+            "opcode": "ld",
+            "addr": 125,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 3,
+            "opcode": "cmp",
+            "addr": "\u0000",
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 4,
+            "opcode": "je",
+            "addr": 10,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 5,
+            "opcode": "st",
+            "addr": 127,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 6,
+            "opcode": "ld",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 7,
+            "opcode": "inc",
+            "addr": null,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 8,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 9,
+            "opcode": "jmp",
+            "addr": 2,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 10,
+            "opcode": "ld",
+            "addr": 14,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 11,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 12,
+            "opcode": "ld",
+            "addr": 126,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 13,
+            "opcode": "cmp",
+            "addr": ".",
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 14,
+            "opcode": "je",
+            "addr": 20,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 15,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 16,
+            "opcode": "ld",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 17,
+            "opcode": "inc",
+            "addr": null,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 18,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 19,
+            "opcode": "jmp",
+            "addr": 12,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 20,
+            "opcode": "ld",
+            "addr": 31,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 21,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 22,
+            "opcode": "ld",
+            "addr": 125,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 23,
+            "opcode": "cmp",
+            "addr": "\u0000",
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 24,
+            "opcode": "je",
+            "addr": 30,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 25,
+            "opcode": "st",
+            "addr": 127,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 26,
+            "opcode": "ld",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 27,
+            "opcode": "inc",
+            "addr": null,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 28,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 29,
+            "opcode": "jmp",
+            "addr": 22,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 30,
+            "opcode": "ld",
+            "addr": 14,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 31,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 32,
+            "opcode": "ld",
+            "addr": 125,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 33,
+            "opcode": "cmp",
+            "addr": "\u0000",
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 34,
+            "opcode": "je",
+            "addr": 40,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 35,
+            "opcode": "st",
+            "addr": 127,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 36,
+            "opcode": "ld",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 37,
+            "opcode": "inc",
+            "addr": null,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 38,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 39,
+            "opcode": "jmp",
+            "addr": 32,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 40,
+            "opcode": "ld",
+            "addr": 40,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 41,
+            "opcode": "cmp",
+            "addr": 1000,
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 42,
+            "opcode": "jb",
+            "addr": 44,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 43,
+            "opcode": "jmp",
+            "addr": 69,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 44,
+            "opcode": "ld",
+            "addr": 40,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 45,
+            "opcode": "mod",
+            "addr": 3,
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 46,
+            "opcode": "st",
+            "addr": 44,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 47,
+            "opcode": "ld",
+            "addr": 44,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 48,
+            "opcode": "cmp",
+            "addr": 0,
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 49,
+            "opcode": "je",
+            "addr": 51,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 50,
+            "opcode": "jmp",
+            "addr": 55,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 51,
+            "opcode": "ld",
+            "addr": 42,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 52,
+            "opcode": "add",
+            "addr": 40,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 53,
+            "opcode": "st",
+            "addr": 42,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 54,
+            "opcode": "jmp",
+            "addr": 65,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 55,
+            "opcode": "ld",
+            "addr": 40,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 56,
+            "opcode": "mod",
+            "addr": 5,
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 57,
+            "opcode": "st",
+            "addr": 46,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 58,
+            "opcode": "ld",
+            "addr": 46,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 59,
+            "opcode": "cmp",
+            "addr": 0,
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 60,
+            "opcode": "je",
+            "addr": 62,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 61,
+            "opcode": "jmp",
+            "addr": 65,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 62,
+            "opcode": "ld",
+            "addr": 42,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 63,
+            "opcode": "add",
+            "addr": 40,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 64,
+            "opcode": "st",
+            "addr": 42,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 65,
+            "opcode": "ld",
+            "addr": 40,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 66,
+            "opcode": "add",
+            "addr": 1,
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 67,
+            "opcode": "st",
+            "addr": 40,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 68,
+            "opcode": "jmp",
+            "addr": 40,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 69,
+            "opcode": "ld",
+            "addr": 42,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 70,
+            "opcode": "st",
+            "addr": 127,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 71,
+            "opcode": "ld",
+            "addr": 48,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 72,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 73,
+            "opcode": "ld",
+            "addr": 126,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 74,
+            "opcode": "cmp",
+            "addr": ".",
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 75,
+            "opcode": "je",
+            "addr": 81,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 76,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 77,
+            "opcode": "ld",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 78,
+            "opcode": "inc",
+            "addr": null,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 79,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 80,
+            "opcode": "jmp",
+            "addr": 73,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 81,
+            "opcode": "ld",
+            "addr": 48,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 82,
+            "opcode": "cmp",
+            "addr": 65,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 83,
+            "opcode": "jne",
+            "addr": 85,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 84,
+            "opcode": "jmp",
+            "addr": 106,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 85,
+            "opcode": "ld",
+            "addr": 48,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 86,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 87,
+            "opcode": "ld",
+            "addr": 125,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 88,
+            "opcode": "cmp",
+            "addr": "\u0000",
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 89,
+            "opcode": "je",
+            "addr": 95,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 90,
+            "opcode": "st",
+            "addr": 127,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 91,
+            "opcode": "ld",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 92,
+            "opcode": "inc",
+            "addr": null,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 93,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 94,
+            "opcode": "jmp",
+            "addr": 87,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 95,
+            "opcode": "ld",
+            "addr": 48,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 96,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 97,
+            "opcode": "ld",
+            "addr": 126,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 98,
+            "opcode": "cmp",
+            "addr": ".",
+            "addr_mode": "immediate"
+        },
+        {
+            "curr_addr": 99,
+            "opcode": "je",
+            "addr": 105,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 100,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "indirect"
+        },
+        {
+            "curr_addr": 101,
+            "opcode": "ld",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 102,
+            "opcode": "inc",
+            "addr": null,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 103,
+            "opcode": "st",
+            "addr": 125,
+            "addr_mode": "direct"
+        },
+        {
+            "curr_addr": 104,
+            "opcode": "jmp",
+            "addr": 97,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 105,
+            "opcode": "jmp",
+            "addr": 81,
+            "addr_mode": null
+        },
+        {
+            "curr_addr": 106,
+            "opcode": "hlt",
+            "addr": null,
+            "addr_mode": null
+        }
+    ]
+}
